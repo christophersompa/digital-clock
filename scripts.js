@@ -1,7 +1,7 @@
 "use strict";
 
 /* "use strict" is a literal expression that indictes 
- * that the code shoudl be executed in "strict mode".
+ * that the code should be executed in "strict mode".
  * 
  * Strict mode makess it easier to write "secure" javacript,
  * strict mode changes previously accepted "bad syntax" into 
@@ -17,7 +17,7 @@
 /* A variable is a "named storage" for data. We can use variables
 to store goodies, visitors, and other data. To create a variable in
 JavaScript, use the "let" keyword. The statement below creates 
-(in other words: declares) a variable with the name "message":*/
+(in other words: declares) a variable with the name "message": */
 
 let message; 
 
@@ -60,7 +60,26 @@ job_sector = job;
 
 /* There are two limitations on variable names in JavaScript: The 
 name must contain only letters, digits, or the symbol "$" and "_". And
-the first character must not be a digit. Example:*/
+the first character must not be a digit. Example: */
 
 let userName;
 let test123;
+
+/* To declare a constant (unchanging) variable, use "const" 
+instead of let. The variable below cannot be reassigned. */
+
+const myBirthday = "24.05.1998";
+
+/* Uppercase constants are used for difficult-to-remember values
+that are known before execution. Such constants are named using 
+capital letters and underscores. */
+
+const COLOR_ORANGE = "#FFF00";
+
+/* COLOR_RED is much easier to remember than "#FF700". 
+It is much easier to mistype "#FF7F00" than COLOR_ORANGE.
+When reading the code, COLOR_ORANGE is much more meaningful 
+than #FF7F00.*/
+
+
+
