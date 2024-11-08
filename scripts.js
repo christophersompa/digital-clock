@@ -81,5 +81,33 @@ It is much easier to mistype "#FF7F00" than COLOR_ORANGE.
 When reading the code, COLOR_ORANGE is much more meaningful 
 than #FF7F00.*/
 
+/*Data Types*/
 
+/*We can put any type in a variable. For example, a variable
+can at one moment be a string and the store a number: */
 
+let msg = "Hello";
+msg = 123;
+
+/*Programming language that allows such things such as Javascript,
+are called "dynamically typed" meaning that there exist data types,
+but variables are not bound to any of them. */
+
+/*Number - the number type represents both integer and 
+floating point numbers. */
+
+/*There are many operations for number, e.g. multiplication *,
+division /, addition +, subtraction -, and so on. */
+
+/*Other data types: Infinity, -Infinity and Nan. Infinity represents
+the mathematical Infinity, it is a special value that's greater than 
+any number */
+
+alert(1 / 0); // Infinity
+
+/*NaN represents a computational error. It is a result of an incorrect 
+or an undefined mathematical operation, for instance: */
+
+alert("not a number" / 2); // NaN
+
+/*Undefined is a "value that is not defined".*/
