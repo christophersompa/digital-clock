@@ -1,13 +1,32 @@
-// JavaScript Tutorial Full Course - Beginner to Pro (2024) Documentation
+// Calling showTime function at every second
+setInterval(showTime, 1000);
 
-//                       Maths and Numbers Syntax
+// Defining showTime function 
+function showTime(){
+    // Getting current time and date
+    let time = new Date();
+    let hour = time.getHours();
+    let min = time.getMinutes();
+    let sec = time.getSeconds();
+    am_pm = "AM";
 
-// We write it down like normal math e.g. 9 + 1, 4 * 2, 8 / 2 and 5 - 3 
+    // Setting time for 12 Hrs format
+    if (hour >= 12) {
+        if(hour > 12) hour -= 12;
+        am_pm = "PM";
+    } else if(hour === 0) {
+        hr = 12;
+        am_pm = "AM";
+    }
 
-// The order of operation * & / are done first and + & - are done after. This is called operator precedence.
+    hour = hour < 10 ? "0" + hour : hour;
+    min = min < 10 ? "0" + min : min;
+    sec = sec < 10 ? "0" + sec : sec;
 
-// If you have 2 * 3 / 2 - it would calculate left to right.
+    let currentTime = hour + ":" + min + ":" + sec + " " + am_pm;
 
-// We can use brackets to control which gets done first (1 + 1) * 3 = 6
+    // Displaying the time 
+    document.getElementById("clock").innerHTML = currentTime;
+}
 
-// Brackets have the highest priority in operator precedence
+showTime();
